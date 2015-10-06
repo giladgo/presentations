@@ -78,3 +78,29 @@ loaders: [
 	{ test: /\.jade$/, loader: "jade" }
 ]
 ```
+--
+### Development server
+```
+$ npm install webpack-dev-server -g
+$ webpack-dev-server --progress --colors
+```
+* Runs in "watch mode"
+  * checks for changes in the background and re-runs the process each time a file changes.
+* Creates a server (port 8080, but configurable) which serves the files statically.
+--
+# Demo 4
+## `webpack-dev-server`
+--
+# Demo 5
+## webpack & PayPal.Me
+--
+### More features
+* Supports AMD **and** CommonJS (and ES6 modules)
+* Shimming
+* Supports code splitting
+  * Allows to split your code into chunks.
+  * Great for having a chunck per page.
+  * Didn't try; don't know.
+--
+# `/giphy the end`
+## src is at https://github.com/giladgo/presentations/tree/master/webpack
