@@ -510,7 +510,7 @@ pre .xml .cdata {
 </section>
   </div>
   <div class="slide hidden" id="slide-4">
-    <section class="slide-content"><h3 id="webpack-really-simply">webpack - really simply</h3>
+    <section class="slide-content"><h3 id="webpack-the-basics">webpack - the basics</h3>
 <ul>
 <li><code>a.js</code> which has:<pre><code class="lang-javascript">require(<span class="string">'b.js'</span>);
 require(<span class="string">'c.js'</span>);</code></pre>
@@ -532,6 +532,29 @@ require(<span class="string">'d.js'</span>);</code></pre>
 </section>
   </div>
   <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><h3 id="-require-ing-things-that-aren-t-js"><code>require</code>ing things that aren&#39;t JS</h3>
+<ul>
+<li>You can also <code>require()</code> other things like CSS files, .jade/.dust templates.<ul>
+<li>So you&#39;d write<pre><code class="lang-javascript">  require(<span class="string">"!style!css!./style.css"</span>);</code></pre>
+</li>
+</ul>
+</li>
+<li>It all depends on if you have the appropriate <strong>loader</strong>.<ul>
+<li><pre><code>$ npm install css-loader style-loader</code></pre>
+</li>
+<li><code>css-loader</code> is responsible for loading css files on <code>require()</code>.</li>
+<li><code>style-loader</code> is responsible for appending the <code>&lt;style&gt;</code> tag to the doc.</li>
+</ul>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><h1 id="demo-2">Demo 2</h1>
+<h2 id="inline-css">Inline CSS</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
     <section class="slide-content"></section>
   </div>
 

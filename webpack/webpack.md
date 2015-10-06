@@ -18,7 +18,7 @@ style: style.css
 * can do pretty much everything that browserify does and more
 * build system
 --
-### webpack - really simply
+### webpack - the basics
 * `a.js` which has:
   ```javascript
   require('b.js');
@@ -37,3 +37,18 @@ style: style.css
 ## Basic webpack (from the tutorial)
 --
 ### `require`ing things that aren't JS
+* You can also `require()` other things like CSS files, .jade/.dust templates.
+  * So you'd write
+  	```javascript
+  	require("!style!css!./style.css");
+	```
+* It all depends on if you have the appropriate **loader**.
+  * ```
+	$ npm install css-loader style-loader
+	```
+  * `css-loader` is responsible for loading css files on `require()`.
+  * `style-loader` is responsible for appending the `<style>` tag to the doc.
+--
+# Demo 2
+## Inline CSS
+--
