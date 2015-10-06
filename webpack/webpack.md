@@ -49,6 +49,32 @@ style: style.css
   * `css-loader` is responsible for loading css files on `require()`.
   * `style-loader` is responsible for appending the `<style>` tag to the doc.
 --
+### `webpack.config.js`
+Instead of writing the options in the command line, we would use a config file, which is normally called `webpack.config.js`.
+```javascript
+module.exports = {
+    entry: "./entry.js",
+    output: {
+        path: __dirname,
+        filename: "bundle.js"
+    },
+    module: {
+        loaders: [
+            { test: /\.css$/, loader: "style!css" }
+        ]
+    }
+};
+```
+This allows us to use automatic loaders, so we don't have to write the `!..!..`
+--
 # Demo 2
 ## Inline CSS
 --
+### MOAR LOADERS
+```javascript
+loaders: [
+    { test: /\.css$/, loader: "style!css" },
+	{ test: /\.coffee$/, loader: "coffee" },
+	{ test: /\.jade$/, loader: "jade" }
+]
+```

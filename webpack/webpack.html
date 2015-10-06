@@ -550,12 +550,36 @@ require(<span class="string">'d.js'</span>);</code></pre>
 </section>
   </div>
   <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><h3 id="-webpack-config-js-"><code>webpack.config.js</code></h3>
+<p>Instead of writing the options in the command line, we would use a config file, which is normally called <code>webpack.config.js</code>.</p>
+<pre><code class="lang-javascript">module.exports = {
+    entry: <span class="string">"./entry.js"</span>,
+    output: {
+        path: __dirname,
+        filename: <span class="string">"bundle.js"</span>
+    },
+    module: {
+        loaders: [
+            { test: <span class="regexp">/\.css$/</span>, loader: <span class="string">"style!css"</span> }
+        ]
+    }
+};</code></pre>
+<p>This allows us to use automatic loaders, so we don&#39;t have to write the <code>!..!..</code></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
     <section class="slide-content"><h1 id="demo-2">Demo 2</h1>
 <h2 id="inline-css">Inline CSS</h2>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
-    <section class="slide-content"></section>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><h3 id="moar-loaders">MOAR LOADERS</h3>
+<pre><code class="lang-javascript">loaders: [
+    { test: <span class="regexp">/\.css$/</span>, loader: <span class="string">"style!css"</span> },
+    { test: <span class="regexp">/\.coffee$/</span>, loader: <span class="string">"coffee"</span> },
+    { test: <span class="regexp">/\.jade$/</span>, loader: <span class="string">"jade"</span> }
+]</code></pre>
+</section>
   </div>
 
 
