@@ -3,6 +3,8 @@ author:
 	name: Gilad Goldberg
 	twitter: giladgo
 theme: sjaakvandenberg/cleaver-dark
+controls: false
+output: webpack.html
 style: style.css
 --
 # webpack.js
@@ -31,4 +33,7 @@ style: style.css
 -- what-is
 ![](http://webpack.github.io/assets/what-is-webpack.png)
 --
-### 
+# Demo 1
+## Basic webpack (from the tutorial)
+--
+### `require`ing things that aren't JS
