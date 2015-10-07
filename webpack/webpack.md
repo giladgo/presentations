@@ -88,10 +88,10 @@ $ webpack-dev-server --progress --colors
   * checks for changes in the background and re-runs the process each time a file changes.
 * Creates a server (port 8080, but configurable) which serves the files statically.
 --
-# Demo 4
+# Demo 3
 ## `webpack-dev-server`
 --
-# Demo 5
+# Demo 4
 ## webpack & PayPal.Me
 --
 ### More features
@@ -101,6 +101,8 @@ $ webpack-dev-server --progress --colors
   * Allows to split your code into chunks.
   * Great for having a chunck per page.
   * Didn't try; don't know.
+--
+# Q & A
 --
 # `/giphy the end`
 ## src is at https://github.com/giladgo/presentations/tree/master/webpack
