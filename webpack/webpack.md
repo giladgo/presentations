@@ -7,7 +7,7 @@ controls: false
 output: webpack.html
 style: style.css
 --
-# webpack.js
+# webpack
 ## module bundler
 ## http://webpack.github.io/
 --
